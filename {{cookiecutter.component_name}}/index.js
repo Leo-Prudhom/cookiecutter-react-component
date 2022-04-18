@@ -1,1 +1,1 @@
-export { default } from "../{{cookiecutter.component_name}}";
+export { default } from "./{{cookiecutter.component_name}}";
