@@ -7,7 +7,6 @@
  * @exports {{cookiecutter.component_name}}
  */
 import React, { Component } from 'react';
-import './{{cookiecutter.package_name}}.css';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import theme from 'styled-theming';
