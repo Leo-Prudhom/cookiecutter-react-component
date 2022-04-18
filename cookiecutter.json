@@ -1,4 +1,3 @@
 {
-  "component_name": "foo",
-  "component_description": "description of foo"
+  "component_name": "components/Foo"
 }
