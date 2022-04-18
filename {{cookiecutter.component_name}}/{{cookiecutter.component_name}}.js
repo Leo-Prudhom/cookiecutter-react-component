@@ -10,7 +10,6 @@ const {{cookiecutter.component_name}}UI = styled.div`
 
 function {{cookiecutter.component_name}}({children}) {
    
-
         return (
             <{{cookiecutter.component_name}}UI>
                 {children}
@@ -22,13 +21,13 @@ function {{cookiecutter.component_name}}({children}) {
 
 // prop types
 {{cookiecutter.component_name}}.propTypes = {
-  children: PropTypes.string;
+  children: PropTypes.string,
 };
 
 
 // default props
 {{cookiecutter.component_name}}.defaultProps = {
-    children : "";
+    children : "",
 };
 
 
