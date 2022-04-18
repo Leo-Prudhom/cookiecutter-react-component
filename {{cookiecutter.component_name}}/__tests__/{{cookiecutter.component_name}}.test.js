@@ -1,9 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import {{cookiecutter.component_name}} from '../{{cookiecutter.component_name}}';
+import React from "react";
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<{{cookiecutter.component_name}} />, div);
-  ReactDOM.unmountComponentAtNode(div);
+import { shallow } from "enzyme";
+import toJson from "enzyme-to-json";
+import "jest-styled-components";
+
+import {{cookiecutter.component_name}} from "../{{cookiecutter.component_name}}";
+
+describe("Global", () => {
+  it("renders without crashing", () => {
+    shallowWithTheme(<{{cookiecutter.component_name}} />);
+  });
+
+  it("renders correctly", () => {
+    const wrapper = shallow(<{{cookiecutter.component_name}} />);
+    expect(toJson(wrapper)).toMatchSnapshot();
+  });
 });
